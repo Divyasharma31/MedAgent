@@ -1,0 +1,11 @@
+# Red-flag rules — Phase 3 placeholder.
+#
+# Rules are added ONLY after a source is approved for use 'rule_authority' (§11).
+# Every rule must have: id, condition, severity, source_id, passage_ref,
+# status (sourced | clinically_reviewed), reviewer, review_date, version,
+# and at least one positive and one near-miss test case (§12A).
+#
+# DO NOT add any rule here without a linked approved source.
+# Phase 0: this file is intentionally empty.
+rules: []
+

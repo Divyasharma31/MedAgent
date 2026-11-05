@@ -1,0 +1,10 @@
+# Banned output patterns — Phase 3 placeholder.
+#
+# This file lists patterns that the validator (F2) must reject in generated
+# output: diagnosis statements, prescriptions, dosage recommendations,
+# reassurance such as "no need to see a doctor", etc.
+# (§3F, §12 of ARCHITECTURE_v0.3.md)
+#
+# Phase 0: intentionally empty. Populated in Phase 3.
+patterns: []
+

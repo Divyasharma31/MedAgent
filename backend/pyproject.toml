@@ -1,0 +1,43 @@
+[project]
+name = "healthcare-cdss-backend"
+version = "0.0.1"
+description = "Agentic Healthcare CDSS — backend (Phase 0 foundations)"
+authors = [
+    { name = "Divya Sharma", email = "divya@example.com" },
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+# Phase 0 only: FastAPI, Uvicorn, Pydantic, httpx.
+# LangGraph, ChromaDB, SQLAlchemy, Sentence Transformers, etc.
+# are added in later phases when actually needed.
+dependencies = [
+    "fastapi==0.162.0",
+    "uvicorn[standard]==0.54.0",
+    "pydantic==2.14.3",
+    "pydantic-settings==2.16.2",
+    "python-dotenv==1.2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+    "pytest-asyncio==1.4.1.post1",
+    "httpx==0.28.1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

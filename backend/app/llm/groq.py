@@ -1,0 +1,7 @@
+"""
+llm/groq.py — Groq provider adapter.
+
+NOT IMPLEMENTED — added in Phase 1/2 after §16.1 is resolved.
+"""
+# Phase 1/2 implementation goes here.
+
