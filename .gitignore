@@ -60,3 +60,23 @@ node_modules/
 frontend/dist/
 frontend/.next/
 
+# Local environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Databases and generated artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.log.*
+
+# Testing and coverage
+.nox/
+.pytest_cache/
+coverage.xml
+
+# Frontend
+frontend/.vite/
+frontend/coverage/
+\
